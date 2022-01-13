@@ -1,13 +1,98 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: all 500ms ease-out;
 }
+
+.main__heading {
+  margin-top: 20px;
+}
+
+.main__searchbox {
+  margin-top: 20px;
+  border: 3px solid;
+  border-radius: 99px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.main__searchbox--btn,
+.main__searchbox--input {
+  color: #00cc99;
+  font-size: 24px;
+  padding: 8px 16px;
+}
+
+.main__searchbox--input {
+  background-color: transparent;
+  border: none;
+}
+
+.main__searchbox--input:focus-visible {
+  outline: none;
+}
+
+.main__searchbox--btn {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.move-up .main__wrapper {
+  height: 25vh;
+}
+
+
+/* 
+
+Movie Container
+
+*/
+
+.movie-list {
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.movie {
+  padding: 20px;
+  margin: 25px;
+  max-width: 250px;
+  border-radius: 5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.movie img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* 
+.movie h3 {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.movie-type {
+  font-size: 14px;
+  color: #aaa
+}
+
