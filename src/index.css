@@ -29,11 +29,15 @@
   overflow: hidden;
 }
 
-.main__searchbox--btn,
-.main__searchbox--input {
+.main__searchbox--btn {
   color: #00cc99;
-  font-size: 24px;
+  font-size: 30px;
   padding: 8px 16px;
+}
+
+.main__searchbox--input {
+  padding: 8px 16px;
+  font-size: 24px;
 }
 
 .main__searchbox--input {

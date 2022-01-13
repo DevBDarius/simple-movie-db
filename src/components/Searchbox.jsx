@@ -10,7 +10,7 @@ const Searchbox = () => {
         placeholder="Fast and Furious"
         onchange="handleSearchQuery(event)"
         required />
-      <button class="main__searchbox--btn" type="submit">
+      <button class="main__searchbox--btn">
         <i class="fas fa-search"></i>
       </button>
     </div>

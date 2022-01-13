@@ -2,7 +2,9 @@ import React from 'react';
 
 const Results = () => {
   return (
-    <div class="movie-list"></div>
+    <div class="movie-list">
+      
+    </div>
   );
 }
 
